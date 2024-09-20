@@ -10,7 +10,7 @@ pipeline {
         
         stage('Checkout'){
            steps {
-                git url: '',
+                git url: 'https://github.com/its-varthini/warfile_to_dockerimage.git',
                 branch: 'main'
            }
         }

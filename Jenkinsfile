@@ -30,7 +30,8 @@ pipeline {
            steps{
                 script{
                     sh '''
-                    echo 'Push to Repo'
+                    echo 'Push to Repo1'
+                     withDockerRegistry(credentialsId: 'docker_cred', url: 'https://hub.docker.com/')
                     docker push varthinidochub/cicd-e2e:${BUILD_NUMBER}
                     '''
                 }

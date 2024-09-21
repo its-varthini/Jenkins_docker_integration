@@ -42,7 +42,7 @@ pipeline {
                     sh '''
                     echo 'Push to Repo1'
                     docker push varthinidochub/cicd-e2e:${BUILD_NUMBER}
-                    docker run -d -p 8081:8081 varthinidochub/cicd-e2e:${BUILD_NUMBER}
+                    docker run -d -p 8080:8080 varthinidochub/cicd-e2e:${BUILD_NUMBER}
                     '''
                 }
             }

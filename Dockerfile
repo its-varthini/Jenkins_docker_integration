@@ -2,7 +2,8 @@ FROM tomcat:8.0-alpine
 
 LABEL maintainer=”varthini@gmail.com”
 
-ADD target/* /usr/local/tomcat/webapps/
+//ADD target/* /usr/local/tomcat/webapps/
+ADD target/webapp.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 
